@@ -272,7 +272,7 @@ h1.heading.pink:after {
 .contact-banner {
   background: url(../assets/bg-pat.png) #664fee repeat;
   color: #fff;
-  padding: 6em;
+  padding: 0.5em;
 }
 .contact-banner h1 {
   font-family: 'Montserrat', sans-serif;
@@ -283,10 +283,97 @@ h1.heading.pink:after {
 }
 
 
+/* Products Page */
+
+.nav-logo {
+    height: 40px;
+    width: auto;
+    margin-right: 10px;
+}
+
+body {
+    background-color: #f6f6f6;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.navbar {
+    background-color: #a0d8d5;
+    height:80px;
+    width: 100%;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.container {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.card:hover {
+    background-color: #ccc;
+}
+
+.card:hover .card-description {
+    display: block;
+}
+
+.card-description {
+    display: none;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    width: 90%;
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.card-text {
+    text-align: center;
+    color: #555;
+}
+
 /* Footer */
+
 .footer {
-  background-color: #37324b;
+  background-color: #a0d8d5;
   padding: 5em;
+  color: #fff;
+  padding: 0 0;
+  text-align: center;
 }
 .footer h1 {
   font-family: 'Montserrat', sans-serif;
@@ -336,6 +423,12 @@ h1.heading.pink:after {
   opacity: 0.8;
 }
 
+@media (min-width: 721px) {
+  /* Show the navigation menu and hide the toggle button in desktop mode */
+  .navbar-collapse {
+    display: block !important;
+  }
+}
 
 /* Main navigation */
 nav {
@@ -440,18 +533,6 @@ ul.main-nav.show-it {
   transition-delay: .25s;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 /* Let's optimise it for mobile devices */
 
 @media (max-width: 720px){
@@ -533,9 +614,3 @@ ul.main-nav.show-it {
     padding: 1em 0em;
   }
 }
-
-
-
-
-
-

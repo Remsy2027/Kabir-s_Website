@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Us</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <!-- Add Bootstrap CSS CDN or local file -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- Add Font Awesome CSS CDN or local file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            margin-bottom: 20px;
+        }
+        .navbar {
+            background-color: #a0d8d5;
+            height: 80px;
+            width: 100%;
+            padding: 0;
+        }
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #fff;
+        }
+        .container {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        h1 {
+            color: #333;
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .owner-section {
+            margin-bottom: 40px;
+        }
+        .owner-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .owner-content {
+            display: flex;
+            align-items: center;
+        }
+        .owner-image {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+        .owner-details h4 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .owner-details p {
+            color: #666;
+            margin-bottom: 5px;
+        }
+        .owner-social-icons {
+            margin-top: 10px;
+        }
+        .social-icon {
+            color: #a0d8d5;
+            font-size: 1.2rem;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+        footer {
+            background-color: #a0d8d5;
+            color: #fff;
+            padding: 0 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="/">
+                    <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Chemical Industry Logo" class="nav-logo">
+                    SBP ENTERPRISE
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>About Us</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis eget leo sit amet posuere. Fusce auctor justo eu ex varius sollicitudin. Mauris eget malesuada elit.</p>
+        <div class="owner-section">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="owner-card">
+                        <div class="owner-content">
+                            <img src="{{ url_for('static', filename='images/owner1.png') }}" alt="Owner 1" class="owner-image">
+                            <div class="owner-details">
+                                <h4>Bhavesh Prajapati</h4>
+                                <p>Co-Founder</p>
+                                <p>Hobbies: Photography, Traveling</p>
+                                <p>Position: Lorem ipsum dolor sit amet</p>
+                                <div class="owner-social-icons">
+                                    <i class="social-icon fab fa-facebook" onclick="showAccount('john_doe_fb')"></i>
+                                    <i class="social-icon fab fa-twitter" onclick="showAccount('john_doe_twitter')"></i>
+                                    <i class="social-icon fab fa-instagram" onclick="showAccount('john_doe_insta')"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="owner-card">
+                        <div class="owner-content">
+                            <img src="{{ url_for('static', filename='images/owner2.png') }}" alt="Owner 2" class="owner-image">
+                            <div class="owner-details">
+                                <h4>Sagar Patel</h4>
+                                <p>Co-Founder</p>
+                                <p>Hobbies: Cooking, Reading</p>
+                                <p>Position: Lorem ipsum dolor sit amet</p>
+                                <div class="owner-social-icons">
+                                    <i class="social-icon fab fa-facebook" onclick="showAccount('jane_smith_fb')"></i>
+                                    <i class="social-icon fab fa-twitter" onclick="showAccount('jane_smith_twitter')"></i>
+                                    <i class="social-icon fab fa-instagram" onclick="showAccount('jane_smith_insta')"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-light">
+        <div class="container">
+            <p>&copy; 2023 SBP ENTERPRISE. All rights reserved.</p>
+            <p>Designed by <a href="https://metaart.co.in/">MetaArt</a></p>
+        </div>
+    </footer>
+
+    <!-- Add Bootstrap JS CDN or local file -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function showAccount(account) {
+            // Replace the alert function with your code to show the owner's account
+            alert("Showing account: " + account);
+        }
+    </script>
+</body>
+</html>

@@ -11,6 +11,13 @@ def home():
 def inquiry():
     return render_template('inquiry.html')
 
+@app.route('/products')
+def products():
+    return render_template('products.html')
+
+@app.route('/about')
+def about():
+    return render_template('about.html')
 
 @app.route('/submit', methods=['POST'])
 def submit():
@@ -24,7 +31,7 @@ def submit():
     smtp_username = 'mohitphotoart1980@gmail.com'
     smtp_password = 'jljjrzsconxuopry'
     sender_email = 'mohitphotoart1980@gmail.com'
-    receiver_email = 'kpmax9.18@gmail.com'
+    receiver_email = 'Sbpenterprise2@gmail.com'
 
     # Construct email message
     subject = 'Form Submission'
