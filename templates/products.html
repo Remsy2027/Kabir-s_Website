@@ -1,145 +1,147 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Products</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-    <!-- Add Bootstrap CSS CDN or local file -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-</head>
-<body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-                <a class="navbar-brand" href="/">
-                    <img src="{{ url_for('static', filename='images/Logo.png') }}" alt="Logo" class="nav-logo">
-                    SBP ENTERPRISE
-                </a>
-            </div>
-        </nav>
-    </header>
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Products</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+        <!-- Add Bootstrap CSS CDN or local file -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+        <!-- Add Font Awesome CSS CDN or local file -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container">
+                    <a class="navbar-brand" href="/">
+                        <img src="{{ url_for('static', filename='images/Logo.png') }}" alt="Logo" class="nav-logo">
+                        SBP ENTERPRISE
+                    </a>
+                </div>
+            </nav>
+        </header>
 
-    <div class="container">
-        <h2 class="mb-4">Our Products</h2>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="{{ url_for('static', filename='images/product1.jpg') }}" alt="Product 1" class="card-img-top">
-                    <div class="card-body">
-                        <h3 class="card-title">SILICA GEL - CRYSTALS & BEADS</h3>
-                        <p class="card-text">Porous, moisture-absorbing crystals/beads. Reusable, non-toxic. Uses: packaging, chemicals, catalysts, humidity control, preservation.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="{{ url_for('static', filename='images/product2.jpg') }}" alt="Product 2" class="card-img-top">
-                    <div class="card-body">
-                        <h3 class="card-title">I DRY DYNAMIC DESICCANTS</h3>
-                        <p class="card-text">Highly effective moisture absorbers. Keep environments dry. Reusable, non-toxic. Uses: packaging, humidity control, moisture prevention.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="{{ url_for('static', filename='images/product3.jpg') }}" alt="Product 3" class="card-img-top">
-                    <div class="card-body">
-                        <h3 class="card-title">CONTAINER DESICCANTS</h3>
-                        <p class="card-text">Moisture absorbers for containers. Prevents condensation, mold, and damage. Reusable, non-toxic. Ideal for shipping and storage.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="{{ url_for('static', filename='images/product4.jpg') }}" alt="Product 4" class="card-img-top">
-                    <div class="card-body">
-                        <h3 class="card-title">ACTIVATED CLAY BEADS</h3>
-                        <p class="card-text">Porous beads for moisture absorption. Efficient and reusable. Controls humidity, prevents mold and odor. Ideal for small spaces and storage areas.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="{{ url_for('static', filename='images/product5.jpg') }}" alt="Product 5" class="card-img-top">
-                    <div class="card-body">
-                        <h3 class="card-title">ACTIVATED CARBON</h3>
-                        <p class="card-text">Porous material, adsorbs impurities, odors, contaminants. Air and water filtration, purification. Removes toxins, improves air quality.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="{{ url_for('static', filename='images/product6.jpg') }}" alt="Product 6" class="card-img-top">
-                    <div class="card-body">
-                        <h3 class="card-title">ACTIVATED ALUMINA</h3>
-                        <p class="card-text">Adsorbs moisture, impurities. Dries, purifies gases, liquids. Removes contaminants, moisture from processes.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="{{ url_for('static', filename='images/product7.jpg') }}" alt="Product 7" class="card-img-top">
-                    <div class="card-body">
-                        <h3 class="card-title">MOLECULAR SIEVES</h3>
-                        <p class="card-text">Selective adsorbents, remove moisture, specific molecules. Used in drying, purification, separation. Precise control of size, shape.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="{{ url_for('static', filename='images/product8.jpg') }}" alt="Product 8" class="card-img-top">
-                    <div class="card-body">
-                        <h3 class="card-title">DESICCANT SACHETS & CANISTERS</h3>
-                        <p class="card-text">Protect against humidity damage. Used in packaging, storage, transportation. Keep products dry, fresh. Reusable, non-toxic.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="{{ url_for('static', filename='images/product9.jpg') }}" alt="Product 9" class="card-img-top">
-                    <div class="card-body">
-                        <h3 class="card-title">OXYGEN ABSORBERS</h3>
-                        <p class="card-text">Prevent oxidation, extend shelf life. Used in food packaging, preservation. Safe and effective for oxygen-sensitive items.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="{{ url_for('static', filename='images/product10.jpg') }}" alt="Product 10" class="card-img-top">
-                    <div class="card-body">
-                        <h3 class="card-title">ANTI MOLD STICKERS</h3>
-                        <p class="card-text">Prevent mold, absorb moisture, ideal for enclosed spaces. Ensure mold-free environment in closets, cabinets, small areas.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="{{ url_for('static', filename='images/product11.jpg') }}" alt="Product 11" class="card-img-top">
-                    <div class="card-body">
-                        <h3 class="card-title">HUMIDITY INDICATOR CARDS</h3>
-                        <p class="card-text">Monitor moisture, color-changing. Packaging, storage. Ensure proper humidity. Ideal for sensitive products.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="{{ url_for('static', filename='images/product12.jpg') }}" alt="Product 12" class="card-img-top">
-                    <div class="card-body">
-                        <h3 class="card-title">SUPER ABSORBENT POLYMERS</h3>
-                        <p class="card-text">High-capacity absorbents for liquids. Used in hygiene, agriculture, packaging. Enhance absorption, control moisture, prevent leakage.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <footer class="bg-dark text-light">
         <div class="container">
-            <p>&copy; 2023 SBP ENTERPRISE. All rights reserved.</p>
-            <p>Designed by <a href="https://metaart.co.in/">MetaArt</a></p>
+            <h2 class="mb-4">Our Products</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="{{ url_for('static', filename='images/product1.jpg') }}" alt="Product 1" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">SILICA GEL - CRYSTALS & BEADS</h3>
+                            <p class="card-text">Porous, moisture-absorbing crystals/beads. Reusable, non-toxic. Uses: packaging, chemicals, catalysts, humidity control, preservation.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="{{ url_for('static', filename='images/product2.jpg') }}" alt="Product 2" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">I DRY DYNAMIC DESICCANTS</h3>
+                            <p class="card-text">Highly effective moisture absorbers. Keep environments dry. Reusable, non-toxic. Uses: packaging, humidity control, moisture prevention.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="{{ url_for('static', filename='images/product3.jpg') }}" alt="Product 3" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">CONTAINER DESICCANTS</h3>
+                            <p class="card-text">Moisture absorbers for containers. Prevents condensation, mold, and damage. Reusable, non-toxic. Ideal for shipping and storage.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="{{ url_for('static', filename='images/product4.jpg') }}" alt="Product 4" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">ACTIVATED CLAY BEADS</h3>
+                            <p class="card-text">Porous beads for moisture absorption. Efficient and reusable. Controls humidity, prevents mold and odor. Ideal for small spaces and storage areas.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="{{ url_for('static', filename='images/product5.jpg') }}" alt="Product 5" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">ACTIVATED CARBON</h3>
+                            <p class="card-text">Porous material, adsorbs impurities, odors, contaminants. Air and water filtration, purification. Removes toxins, improves air quality.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="{{ url_for('static', filename='images/product6.jpg') }}" alt="Product 6" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">ACTIVATED ALUMINA</h3>
+                            <p class="card-text">Adsorbs moisture, impurities. Dries, purifies gases, liquids. Removes contaminants, moisture from processes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="{{ url_for('static', filename='images/product7.jpg') }}" alt="Product 7" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">MOLECULAR SIEVES</h3>
+                            <p class="card-text">Selective adsorbents, remove moisture, specific molecules. Used in drying, purification, separation. Precise control of size, shape.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="{{ url_for('static', filename='images/product8.jpg') }}" alt="Product 8" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">DESICCANT SACHETS & CANISTERS</h3>
+                            <p class="card-text">Protect against humidity damage. Used in packaging, storage, transportation. Keep products dry, fresh. Reusable, non-toxic.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="{{ url_for('static', filename='images/product9.jpg') }}" alt="Product 9" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">OXYGEN ABSORBERS</h3>
+                            <p class="card-text">Prevent oxidation, extend shelf life. Used in food packaging, preservation. Safe and effective for oxygen-sensitive items.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="{{ url_for('static', filename='images/product10.jpg') }}" alt="Product 10" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">ANTI MOLD STICKERS</h3>
+                            <p class="card-text">Prevent mold, absorb moisture, ideal for enclosed spaces. Ensure mold-free environment in closets, cabinets, small areas.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="{{ url_for('static', filename='images/product11.jpg') }}" alt="Product 11" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">HUMIDITY INDICATOR CARDS</h3>
+                            <p class="card-text">Monitor moisture, color-changing. Packaging, storage. Ensure proper humidity. Ideal for sensitive products.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="{{ url_for('static', filename='images/product12.jpg') }}" alt="Product 12" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">SUPER ABSORBENT POLYMERS</h3>
+                            <p class="card-text">High-capacity absorbents for liquids. Used in hygiene, agriculture, packaging. Enhance absorption, control moisture, prevent leakage.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </footer>
 
-    <!-- Add Bootstrap JS CDN or local file -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+        <footer class="bg-dark text-light">
+            <div class="container">
+                <p>&copy; 2023 SBP ENTERPRISE. All rights reserved.</p>
+                <p>Designed by <a href="https://metaart.co.in/">MetaArt</a></p>
+            </div>
+        </footer>
+
+        <!-- Add Bootstrap JS CDN or local file -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+    </html>

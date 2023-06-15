@@ -15,6 +15,10 @@ def inquiry():
 def products():
     return render_template('products.html')
 
+@app.route('/drybag')
+def drybag():
+    return render_template('drybag.html')
+
 @app.route('/about')
 def about():
     return render_template('about.html')
